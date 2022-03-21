@@ -1,0 +1,157 @@
+
+:root{
+    --blue-cake:#2f4fcd;
+    --pink-cake:#F27272;
+    --black:#222;
+    --white:#fff;
+    --light-black:#666;
+    --light-white:#ccc;
+    --light-bg:#f5f5f5;
+    --dark-bg:rgba(0,0,0,.7);
+    --border:.1rem solid var(--pink-cake);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+section, header{
+    padding: 5rem 10%;
+}
+
+.header{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    z-index: 1000;
+}
+
+.header a.logo button.logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+}
+
+.header .logo i{
+    color: var(--blue-cake);
+    padding-right: .7rem;
+}
+
+.header .navbar a{
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: var(--light-black);   
+    border-bottom: .1rem solid transparent;
+    
+}
+
+.btnh{
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: white;
+    background-color: #3858d6;
+    border-radius: .3rem;
+    box-shadow: 0px 2px 0px #999;
+    
+}
+
+.header .navbar a:hover{
+    color: var(--blue-cake);
+    border-bottom: .1rem solid var(--pink-cake);
+
+}
+
+.cuerpoImagen img{
+    size: 250px;
+    margin: auto;
+    height: 100%;
+}
+#imagenV{
+    height: 350px;
+    width: 550px;
+}
+
+a {
+    background-color: powderblue;
+    transition: background-color .5s;
+  }
+
+  a:hover {
+    background-color: gold;
+}
+
+
+ul{
+    border: 1px solid rgb(15, 66, 107);
+    padding-left: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.lista1{
+    color: rgb(15, 66, 107);
+    border-left: 1px solid rgb(15, 66, 107);
+    padding:1em;
+    position: relative;
+}
+
+.primero{
+    border-left: none;
+}
+
+li > ul {
+  display: none;
+  position: absolute;
+}
+
+li:hover{
+    background-color: rgb(15, 66, 107);
+    color: white;
+}
+
+li:hover ul {
+    display: inline;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.lista2 {
+ 
+
+    color: rgb(15, 66, 107);
+    padding: 1em;
+}
+
+.hide {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    background: red;
+    transition: all 0.5s ease;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+  input[type="checkbox"]:checked + .hide {
+    height: 100px;
+    opacity: 1;
+    padding: 20px;
+  }
+  #ifOne {
+    width: 100%;
+    background: green;
+    transition: all 0.5s ease;
+    height: 0px;
+   
+  }
+  #inlineRadio2:checked~#ifOne {
+    height: 100px;
+    opacity: 1;
+  }
